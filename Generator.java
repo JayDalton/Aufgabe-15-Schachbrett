@@ -31,7 +31,7 @@ public class Generator
   /** 
   */
   //##########################################################################
-	public Generator()
+  public Generator()
   {
     intMin = 0;
     intMax = 1;
@@ -47,7 +47,7 @@ public class Generator
   /** 
   */
   //##########################################################################
-	public Generator(int minimum, int maximum)
+  public Generator(int minimum, int maximum)
   {
     intMin = minimum;
     intMax = maximum;
@@ -63,7 +63,7 @@ public class Generator
   /** 
   */
   //##########################################################################
-	public Generator(long minimum, long maximum)
+  public Generator(long minimum, long maximum)
   {
     lngMin = minimum;
     lngMax = maximum;
@@ -79,7 +79,7 @@ public class Generator
   /**
   */
   //##########################################################################
-	public Generator(double minimum, double maximum)
+  public Generator(double minimum, double maximum)
   {
     dblMin = minimum;
     dblMax = maximum;
@@ -97,7 +97,7 @@ public class Generator
     * @return Generierte Ganzzahl
   */
   //##########################################################################
-	public int ganzzahl()
+  public int ganzzahl()
   {
     return ganzzahl(intMin, intMax);
   }
@@ -111,7 +111,7 @@ public class Generator
     * @return Generierte Ganzzahl
   */
   //##########################################################################
-	public static int ganzzahl(int min, int max)
+  public static int ganzzahl(int min, int max)
   {
     return min + (int)Math.floor(Math.random() * (max - min + 1));
   }
@@ -122,7 +122,7 @@ public class Generator
     * @return Generierte Ganzzahl
   */
   //##########################################################################
-	public long langzahl()
+  public long langzahl()
   {
     return langzahl(lngMin, lngMax);
   }
@@ -133,7 +133,7 @@ public class Generator
     * @return Generierte Ganzzahl
   */
   //##########################################################################
-	public static long langzahl(long min, long max)
+  public static long langzahl(long min, long max)
   {
     return min + (long)Math.floor(Math.random() * (max - min + 1));
   }
@@ -178,7 +178,7 @@ public class Generator
     * @return Generierte Gleitzahl
   */
   //##########################################################################
-	public double gleitzahl()
+  public double gleitzahl()
   {
     return gleitzahl(dblMin, dblMax);
   }
@@ -192,7 +192,7 @@ public class Generator
     * @return Generierte Gleitzahl
   */
   //##########################################################################
-	public static double gleitzahl(double min, double max)
+  public static double gleitzahl(double min, double max)
   {
     return Math.random() * (max - min) + min;
   }
@@ -242,7 +242,7 @@ public class Generator
     * @return Generierte Liste mit Symbolen
   */
   //##########################################################################
-	public String symboleGanzzahl(int anzahl, int min, int max)
+  public String symboleGanzzahl(int anzahl, int min, int max)
   {
     String ergebnis = new String();
     while (ergebnis.length() < anzahl)
@@ -261,7 +261,7 @@ public class Generator
     * @return Generierte Liste mit Symbolen
   */
   //##########################################################################
-	public String symboleGanzzahlUnikat(int anzahl)
+  public String symboleGanzzahlUnikat(int anzahl)
   {
     String ergebnis = new String();
     Integer ziffer = 0;
@@ -288,7 +288,7 @@ public class Generator
     * @return Generierte Zeichenkette mit einem Symbol
   */
   //##########################################################################
-	public static String symbol(String minimum, String maximum)
+  public static String symbol(String minimum, String maximum)
   {
     return new String().format("%c", ganzzahl(minimum.codePointAt(0), maximum.codePointAt(0)));
   }  
@@ -304,7 +304,7 @@ public class Generator
     * @return Generierte Zeichenkette mit einem Symbol
   */
   //##########################################################################
-	public static String symbole(int anzahl, String minimum, String maximum)
+  public static String symbole(int anzahl, String minimum, String maximum)
   {
     String ergebnis = new String();
     for (int i = 0; i < anzahl; i++)

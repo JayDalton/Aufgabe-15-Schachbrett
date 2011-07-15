@@ -104,10 +104,11 @@ public class Listen
       ergebnis = array[0];
       for (int i = 0; i < array.length; i++)
       {
-        if (array[i] < ergebnis)
+        if (array[i] < ergebnis) 
+        {
           ergebnis = array[i];
+        }
       }
-    } else {
     }
     
     return ergebnis;
@@ -131,9 +132,10 @@ public class Listen
       for (int i = 0; i < array.length; i++)
       {
         if (array[i] < ergebnis)
+        {
           ergebnis = array[i];
+        }
       }
-    } else {
     }
     
     return ergebnis;
@@ -157,9 +159,10 @@ public class Listen
       for (int i = 0; i < array.length; i++)
       {
         if (array[i] > ergebnis)
+        {
           ergebnis = array[i];
+        }
       }
-    } else {
     }
     
     return ergebnis;
@@ -183,9 +186,10 @@ public class Listen
       for (int i = 0; i < array.length; i++)
       {
         if (array[i] > ergebnis)
+        {
           ergebnis = array[i];
+        }
       }
-    } else {
     }
     
     return ergebnis;
